@@ -1,0 +1,42 @@
+<div class="product-content">
+    <ul class="product-list">
+
+        <ng-container *ngFor="let product of dataSource">
+            <ng-container *ngFor="let model of product['models']">
+        <li class="single-product">
+            <div class="product-image">
+                <img [src]="model.image? model.image : 'assets/default-images/default.png'" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="bold">{{model.name}}({{model.colour}}, {{model.rom}})</h2>
+                <div class="rating">
+                <span class="star">
+                    <div class="reviews">
+                    {{model.starRating}}
+                    <img src="assets/icons/star.svg" class="rev-icon">
+                    </div>
+                </span>
+            <span class="text-light">{{model.numOfRatings}} ratings & {{model.numOfReviews}} reviews</span>
+            </div>
+            <div class="features">
+                <ul *ngFor="let feature of model.features" class="feature-table">
+                    <li class="feat-text">- {{feature}}</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="product-info price">
+                <h2 class="bold">₹{{model.price}}</h2>
+                
+            <div class="button-wrap">
+                <button (click)="addToCart(product['brandId'],model.id)" [routerLink]="['CART' | absolutePath]" class="action" type="button" mat-flat-button color="primary">ADD TO CART</button>
+                <button (click)="buyNow($event)" class="action secondary" type="button" mat-flat-button >BUY NOW</button>
+            </div>
+            </div>
+        </li>
+    </ng-container>
+    </ng-container>
+        
+    </ul>
+    
+</div>

@@ -1,0 +1,103 @@
+<div class="container">
+
+    <div class="product-content">
+
+        <ul class="product-list">
+            <div class="cart">
+                <h2 class="bold">My Cart({{qty}})</h2>
+            </div>
+            <li class="single-product">
+                <div class="product-image">
+                    <img [src]="dataSource?.image? dataSource?.image : 'assets/default-images/default.png'" alt="">
+
+                </div>
+
+                <div class="product-info">
+                    <h2 class="bold">{{dataSource?.name}}({{dataSource?.colour}}, {{dataSource?.rom}})</h2>
+                    <div class="rating">
+                        <!-- <span class="star">
+                    <div class="reviews">
+                    {{dataSource?.starRating}}
+                    <img src="assets/icons/star.svg" class="rev-icon">
+                    </div>
+                </span> -->
+                        <p class="text-light">{{dataSource?.ram}} RAM</p>
+                        <p class="text-light">Seller: {{dataSource?.seller}}</p>
+                    </div>
+
+                    <div class="price">
+                        <span class="discounted">₹{{dataSource?.price}}</span>
+                        <span class="mrp">₹{{dataSource?.mrp}}</span>
+                        <span class="disc-rate">20%off</span>
+                    </div>
+                    <!-- <div class="features">
+                <ul *ngFor="let feature of dataSource?.features" class="feature-table">
+                    <li class="feat-text">- {{feature}}</li>
+                </ul>
+            </div> -->
+                </div>
+
+            </li>
+
+
+        </ul>
+        <div class="qty-toggle">
+            <button [disabled]="qty === 1" (click)="decQty($event)" class="btn-qty">-</button>
+            {{qty}}
+            <button (click)="incQty($event)" class="btn-qty">+</button>
+        </div>
+
+        <div class="place-order">
+            <div class="place-box">
+                <button (click)="placeOrder($event)" mat-flat-button class="action secondary">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-content price-info">
+
+        <ul class="product-list">
+            <div class="cart">
+                <h2 class="bold">Price Details</h2>
+            </div>
+            <li class="single-product">
+                <!-- <div class="product-image">
+                <img [src]="dataSource?.image? dataSource?.image : 'assets/default-images/default.png'" alt="">
+                
+            </div> -->
+
+                <div class="product-info price-det">
+                    <!-- <h2 class="bold">{{dataSource?.name}}({{dataSource?.colour}}, {{dataSource?.rom}})</h2> -->
+
+
+                    <div class="detail">
+                        <div>
+                            <span class="discounted">Price({{qty}} item)</span>
+                        </div>
+                        <div>
+                        <span class="disc-rate">₹{{dataSource?.mrpNum*qty}}</span>
+                    </div>
+                    </div>
+                    <div class="detail">
+                        <span class="discounted">Discount</span>
+                        <span class="disc-rate">-₹{{(dataSource?.mrpNum-dataSource?.priceNum)*qty}}</span>
+                    </div>
+
+                    <div class="detail last">
+                        <span class="discounted">Total Amount</span>
+                        <span class="disc-rate">₹{{dataSource?.priceNum*qty}}</span>
+                    </div>
+                    <!-- <div class="features">
+                <ul *ngFor="let feature of dataSource?.features" class="feature-table">
+                    <li class="feat-text">- {{feature}}</li>
+                </ul>
+            </div> -->
+                </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+
+</div>

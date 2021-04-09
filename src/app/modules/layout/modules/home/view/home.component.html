@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+    <mat-label>Select brand(s)</mat-label>
+    <mat-select [formControl]="brandControl" multiple>
+      <mat-option *ngFor="let brand of brandsList" [value]="brand">{{brand}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div>
+  <button type="submit" (click)="searchBrand($event)" mat-flat-button color="primary">Search</button>
+</div>

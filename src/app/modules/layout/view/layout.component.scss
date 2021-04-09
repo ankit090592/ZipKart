@@ -1,0 +1,28 @@
+.layout_wrapper {
+    --header: 5em;
+}
+
+.layout_wrapper {
+    height: 100%;
+    padding-top: var(--header);
+    background-color: #f8f8fb;
+    // @include transt(all 0.3s ease);
+    // min-height: calc(100vh - var(--skip));
+    .header_wrap {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: var(--header);
+        z-index: 9;
+        background-color: #fff;
+        // @include transt(all 0.3s ease);
+        box-shadow: 0 10px 30px 0 rgba(146, 146, 146, 0.16);
+        
+    }
+   
+    .layout_wrapper_inner {
+        background-color: #f8f8fb;
+        padding: 25px 20px 40px;
+    }
+}
