@@ -19,11 +19,11 @@ export class ListingComponent implements OnInit, OnDestroy {
   dataSource: string[] = [];
   constructor(private _route: ActivatedRoute, private _utilityService: UtilityService,
     private _router: Router) {
-      if(typeof this._route.queryParams['_value'].brand === 'string'){
-        this.brands.push(this._route.queryParams['_value'].brand)
-      }else{
-        this.brands = this._route.queryParams['_value'].brand;
-      }    
+    if (typeof this._route.queryParams['_value'].brand === 'string') {
+      this.brands.push(this._route.queryParams['_value'].brand)
+    } else {
+      this.brands = this._route.queryParams['_value'].brand;
+    }
   }
 
   ngOnInit(): void {
@@ -36,8 +36,8 @@ export class ListingComponent implements OnInit, OnDestroy {
     )
   }
 
-  addToCart(brandId, modelId){
-    this._router.navigate([CART.fullUrl],{ queryParams: {brand:brandId, model: modelId}});
+  addToCart(brandId, modelId) {
+    this._router.navigate([CART.fullUrl], { queryParams: { brand: brandId, model: modelId } });
   }
 
   buyNow(event) {
