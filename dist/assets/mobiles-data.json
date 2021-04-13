@@ -1,0 +1,113 @@
+{
+    "data": [
+        {
+            "brandName": "Mi",
+            "brandId": "01",
+            "models": [
+                {
+                    "name": "Redmi 9 Prime",
+                    "id": "mi01",
+                    "colour": "Black",
+                    "ram": "4 GB",
+                    "rom": "64 GB",
+                    "starRating": "3.8",
+                    "numOfRatings": "9,87,667",
+                    "numOfReviews": "18,78,788",
+                    "mrp": "8,499",
+                    "price": "7,499",
+                    "mrpNum": 8499,
+                    "priceNum": 7499,
+                    "seller": "iCart",
+                    "image": "https://rukminim1.flixcart.com/image/312/312/ke1pnrk0/mobile/g/2/p/mi-redmi-9-prime-m2004j191-original-imafuteqf9gdxdcg.jpeg?q=70",
+                    "features": [
+                        "4 GB RAM | 64 GB ROM | Expandable Upto 512 GB",
+                        "16.59 cm (6.53 inch) Full HD+ Display",
+                        "13MP Rear Camera | 8MP Front Camera",
+                        "5020 mAh Battery",
+                        "MediaTek Helio G80 Processor",
+                        "1 Year Manufacturer Warranty"
+                    ]
+                },
+                {
+                    "name": "Redmi 8A",
+                    "id": "mi02",
+                    "colour": "Space Blue",
+                    "ram": "2 GB",
+                    "rom": "32 GB",
+                    "starRating": "4.2",
+                    "numOfRatings": "44,399",
+                    "numOfReviews": "87,675",
+                    "mrp": "7,499",
+                    "price": "6,999",
+                    "mrpNum": 7499,
+                    "priceNum": 6999,
+                    "seller": "FXCart",
+                    "image": "https://rukminim1.flixcart.com/image/416/416/k6tniq80/mobile/u/d/h/mi-redmi-8a-dual-b07x1kta-original-imafp73grqyzv9t3.jpeg?q=70",
+                    "features": [
+                        "2 GB RAM | 32 GB ROM | Expandable Upto 512 GB",
+                        "15.8 cm (6.22 inch) HD+ Display",
+                        "13MP + 2MP | 8MP Front Camera",
+                        "5000 mAh Lithium Polymer Battery",
+                        "Qualcomm Snapdragon 439 Processor",
+                        "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories Including Batteries from the Date of Purchase"
+                    ]
+                }
+            ]
+        },
+        {
+            "brandName": "SAMSUNG",
+            "brandId": "02",
+            "models": [
+                {
+                    "name": "SAMSUNG Galaxy F41",
+                    "id": "sam01",
+                    "colour": "Fusion Blue",
+                    "ram": "6 GB",
+                    "rom": "128 GB",
+                    "starRating": "4.3",
+                    "numOfRatings": "2,48,899",
+                    "numOfReviews": "29,675",
+                    "mrp": "18,499",
+                    "price": "16,999",
+                    "mrpNum": 18499,
+                    "priceNum": 16999,
+                    "seller": "Cloudtail",
+                    "image": "https://rukminim1.flixcart.com/image/416/416/kfzq8i80/mobile/y/j/f/samsung-galaxy-f41-sm-f415fzbdins-original-imafwbnpdafmeuj6.jpeg?q=70",
+                    "features": [
+                        "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
+                        "16.26 cm (6.4 inch) Full HD+ Display",
+                        "64MP + 8MP + 5MP | 32MP Front Camera",
+                        "6000 mAh Lithium-ion Battery",
+                        "Exynos 9611 Processor",
+                        "Super AMOLED Display",
+                        "1 Year Warranty Provided by the Manufacturer from Date of Purchase"
+                    ]
+                },
+                {
+                    "name": "SAMSUNG Galaxy M31",
+                    "id": "sam02",
+                    "colour": "Ocean Blue",
+                    "ram": "6 GB",
+                    "rom": "64 GB",
+                    "starRating": "4.4",
+                    "numOfRatings": "8,677",
+                    "numOfReviews": "682",
+                    "mrp": "16,999",
+                    "price": "15,236",
+                    "mrpNum": 16999,
+                    "priceNum": 15236,
+                    "seller": "e-Sales",
+                    "image": "https://rukminim1.flixcart.com/image/312/312/k7f34i80/mobile/h/e/4/samsung-galaxy-m31-sm-m315fzbdins-original-imafpnrzfeyrmq8a.jpeg?q=70",
+                    "features": [
+                        "6 GB RAM | 64 GB ROM | Expandable Upto 512 GB",
+                        "16.26 cm (6.4 inch) Full HD+ Display",
+                        "64MP + 8MP + 5MP + 5MP | 32MP Front Camera",
+                        "6000 mAh Battery",
+                        "Samsung Exynos 9 Octa 9611 Processor",
+                        "1 year"
+                    ]
+                }
+            ]
+        }
+    ]
+}
